@@ -8,6 +8,23 @@
 import UIKit
 import SVProgressHUD
 class BaseViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupColorForNavigation()
+    }
+    
+    private func setupColorForNavigation() {
+        if #available(iOS 15, *) {
+            let navigationBarAppearance = UINavigationBarAppearance()
+            navigationBarAppearance.configureWithTransparentBackground()
+
+            navigationController?.navigationBar.tintColor = .white
+
+            navigationItem.scrollEdgeAppearance = navigationBarAppearance
+            navigationItem.standardAppearance = navigationBarAppearance
+            navigationItem.compactAppearance = navigationBarAppearance
+        }
+    }
 }
 
 extension BaseViewController: BaseViewProtocol {

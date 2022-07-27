@@ -23,7 +23,7 @@ class CurrentWeatherCoordinator: Coordinator {
         let currentWeatherModel = CurrentWeatherModel()
         let presenter = CurrentWeatherPresenter(model: currentWeatherModel, view: currentWeatherView, coordinator: self)
         currentWeatherView.set(presenter: presenter)
-        navController.isNavigationBarHidden = true
+//        navController.isNavigationBarHidden = true
         navController.setViewControllers([currentWeatherView], animated: true)
         window?.rootViewController = self.navController
         window?.makeKeyAndVisible()

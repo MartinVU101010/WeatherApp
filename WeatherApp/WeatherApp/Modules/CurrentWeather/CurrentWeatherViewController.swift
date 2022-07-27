@@ -84,6 +84,7 @@ extension CurrentWeatherViewController: CurrentWeatherViewProtocol {
 extension CurrentWeatherViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         presenter?.invokeSearch(textField.text ?? "")
+        textField.resignFirstResponder()
         return true
     }
 }

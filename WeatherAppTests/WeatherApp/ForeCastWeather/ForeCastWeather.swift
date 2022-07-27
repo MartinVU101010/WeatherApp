@@ -33,7 +33,7 @@ class ForeCastWeather: XCTestCase {
         }
     }
     
-    func testApiGetCurrentWeatherEmptyCityName() throws {
+    func testApiGetForeCastWeatherEmptyCityName() throws {
         var existError: ServiceError?
         let exp = expectation(description: "Get ForeCast Data")
         let service = WeatherService()
@@ -44,7 +44,7 @@ class ForeCastWeather: XCTestCase {
         }
         waitForExpectations(timeout: 10) { (error) in
             guard let result = existError else {
-                XCTFail("Unexpected response")
+                XCTAssertNil(error)
                 return
             }
             if result.message == "Not found Data" {
@@ -55,7 +55,7 @@ class ForeCastWeather: XCTestCase {
         }
     }
 //MARK: Turn off Internet
-    func testApiGetCurrentWeatherNoInternet() throws {
+    func testApiGetForeCastWeatherNoInternet() throws {
         var existError: ServiceError?
         let exp = expectation(description: "Get ForeCast Data")
         let service = WeatherService()
