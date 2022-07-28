@@ -19,10 +19,6 @@ class ForeCastWeatherViewController: BaseViewController {
         super.viewDidLoad()
         presenter?.viewDidload()
     }
-    
-    @IBAction private func backAction() {
-        presenter?.backAction()
-    }
 }
 
 extension ForeCastWeatherViewController: ForeCastWeatherViewProtocol {

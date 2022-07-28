@@ -55,11 +55,7 @@ extension ForeCastWeatherPresenter: ForeCastWeatherPresenterProtocol {
         guard let listWeather = data.list else {
             return
         }
-        
-        for (index, element) in listWeather.enumerated() {
-            weathers.append(element)
-            print(element.dtStr?.weatherDateConvert())
-        }
+        weathers =  listWeather.filter({($0.dtStr ?? "").contains("12:00:00")})
         view?.updateUI()
     }
     func viewDidload() {

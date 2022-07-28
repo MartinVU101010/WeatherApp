@@ -14,7 +14,6 @@ final class ForeCastWeatherModel {
     }
 }
 
-
 extension ForeCastWeatherModel: ForeCastWeatherModelProtocol {
     func getForcastData(completion: ((ForecastWeatherData?, ServiceError?) -> Void)?) {
         let service = WeatherService()
