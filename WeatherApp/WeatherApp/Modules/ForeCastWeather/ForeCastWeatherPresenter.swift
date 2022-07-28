@@ -57,10 +57,8 @@ extension ForeCastWeatherPresenter: ForeCastWeatherPresenterProtocol {
         }
         
         for (index, element) in listWeather.enumerated() {
-            if (index > 4) {
-                break
-            }
             weathers.append(element)
+            print(element.dtStr?.weatherDateConvert())
         }
         view?.updateUI()
     }

@@ -21,7 +21,6 @@
 		CE1760A62889396200ED7BD8 /* CurrentWeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1760A52889396200ED7BD8 /* CurrentWeatherData.swift */; };
 		CE1760B2288A423800ED7BD8 /* ForeCastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1760B0288A423800ED7BD8 /* ForeCastCell.swift */; };
 		CE1760B3288A423800ED7BD8 /* ForeCastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1760B1288A423800ED7BD8 /* ForeCastCell.xib */; };
-		CE667E03288E35A800CE573B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE667E02288E35A800CE573B /* GoogleService-Info.plist */; };
 		CE667E07288FF8D700CE573B /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE667E06288FF8D700CE573B /* Coordinator.swift */; };
 		CE667E0C288FF98B00CE573B /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE667E0B288FF98B00CE573B /* UIViewExtension.swift */; };
 		CE667E0F288FF9D500CE573B /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE667E0E288FF9D500CE573B /* DateExtension.swift */; };
@@ -89,7 +88,6 @@
 		CE1760A52889396200ED7BD8 /* CurrentWeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherData.swift; sourceTree = "<group>"; };
 		CE1760B0288A423800ED7BD8 /* ForeCastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForeCastCell.swift; sourceTree = "<group>"; };
 		CE1760B1288A423800ED7BD8 /* ForeCastCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForeCastCell.xib; sourceTree = "<group>"; };
-		CE667E02288E35A800CE573B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CE667E06288FF8D700CE573B /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		CE667E0B288FF98B00CE573B /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		CE667E0E288FF9D500CE573B /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
@@ -190,7 +188,6 @@
 		CE17606A2889029300ED7BD8 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
-				CE667E02288E35A800CE573B /* GoogleService-Info.plist */,
 				CE667E04288FF89A00CE573B /* AppDelegate */,
 				CE667E05288FF8B800CE573B /* Coordinator */,
 				CE1760A02889309200ED7BD8 /* Common */,
@@ -502,7 +499,6 @@
 				CE667E342890E67300CE573B /* ForeCastWeatherViewController.xib in Resources */,
 				CE667E22288FFBEF00CE573B /* CurrentWeatherViewController.xib in Resources */,
 				CE1760B3288A423800ED7BD8 /* ForeCastCell.xib in Resources */,
-				CE667E03288E35A800CE573B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -833,7 +829,6 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UIUserInterfaceStyle = light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -862,7 +857,6 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UIUserInterfaceStyle = light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

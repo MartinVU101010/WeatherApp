@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,10 +14,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
             self.window = UIWindow(frame: UIScreen.main.bounds)
+            window?.overrideUserInterfaceStyle = .light
             let nav = UINavigationController()
             let currentWeatherCoordinator = CurrentWeatherCoordinator(window: window, navController: nav)
             currentWeatherCoordinator.start()
-            FirebaseApp.configure()
             return true
     }
 }

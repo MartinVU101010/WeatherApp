@@ -52,7 +52,8 @@ extension ForeCastWeatherViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ForeCastCell", for: indexPath) as! ForeCastCell
         if let list = presenter?.weathers, list.count > indexPath.row {
-            let dateStr = Date.getNextDate(count: indexPath.row)
+            let weatherData = list[indexPath.row]
+            let dateStr = weatherData.dtStr?.weatherDateConvert() ?? ""
             cell.updateUI(list[indexPath.row], cityName: presenter?.cityName ?? "", dateStr: dateStr)
         }
         cell.selectionStyle = .none

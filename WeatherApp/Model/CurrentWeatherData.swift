@@ -25,7 +25,8 @@ struct CurrentWeatherData: Decodable {
     let cityId: Int?
     let cityName: String? ///City name
     let statusCode: Int? /// cod - Internal parameter for HTTP Response
-    
+    let dtStr: String?
+
     struct Weather: Decodable {
         let id: Int?
         let main: String?
@@ -91,6 +92,7 @@ struct CurrentWeatherData: Decodable {
         case cityId = "id"
         case cityName = "name"
         case statusCode = "cod"
+        case dtStr = "dt_txt"
     }
 }
 
